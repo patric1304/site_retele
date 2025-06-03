@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE intrebari [
+<!ELEMENT intrebari (intrebare+)>
+<!ELEMENT intrebare (enunt, raspuns)>
+<!ATTLIST intrebare id ID #REQUIRED
+                    categorie CDATA #IMPLIED>
+<!ELEMENT enunt (#PCDATA)>
+<!ELEMENT raspuns (#PCDATA)>
+]>
+<?xml-stylesheet type="text/xsl" href="faq_ski.xsl"?>
+
+<intrebari>
+    <intrebare id="q1" categorie="tarife">
+        <enunt>Cât costă un curs de schi pentru începători?</enunt>
+        <raspuns>Prețul este de 300 RON pentru 2 ore, echipamentul este inclus.</raspuns>
+    </intrebare>
+    <intrebare id="q2" categorie="varsta">
+        <enunt>De la ce vârstă pot participa copiii?</enunt>
+        <raspuns>Copiii pot începe de la vârsta de 4 ani.</raspuns>
+    </intrebare>
+    <intrebare id="q3" categorie="rezervare">
+        <enunt>Se poate face rezervare online?</enunt>
+        <raspuns>Da, direct din pagina „Rezervări” de pe site.</raspuns>
+    </intrebare>
+    <intrebare id="q4" categorie="echipament">
+        <enunt>Trebuie să aduc echipament propriu?</enunt>
+        <raspuns>Nu, școala oferă echipamentul complet pentru lecții.</raspuns>
+    </intrebare>
+    <intrebare id="q5" categorie="durata">
+        <enunt>Cât durează un curs complet?</enunt>
+        <raspuns>Un curs complet durează 5 zile, cu 2 ore de instruire pe zi.</raspuns>
+    </intrebare>
+</intrebari>
